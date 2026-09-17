@@ -1,43 +1,73 @@
-## Problem statement
 
-Small libraries, classrooms, and learning projects often need a straightforward way to track books and manage lending without the overhead of a full library information system.
-Manual tracking (paper logs or spreadsheets) is error-prone and hard to keep consistent. This project provides a lightweight, terminal-based Java tool to add and list books, record when a book is issued, and record returns — keeping the library's state consistent while remaining easy to run and understand.
 
-## Scope of the project
 
-This project focuses on implementing core library operations in a simple, single-file Java program that runs from the command line. Within scope:
-- In-memory management of a collection of books (no persistence by default).
-- Basic CRUD-like operations limited to: add book, display books, issue book, and return book.
-- A user-friendly interactive menu for performing operations.
-- Initialization with an optional small set of sample books for testing and demonstration.
+## Problem Statement
 
-Out of scope for the current version (can be added later):
-- Persistent storage (database or file) — optional enhancement.
-- Multi-user or concurrent access handling.
-- Advanced features like reservations, fines, complex borrower records, or reporting dashboards.
-- A graphical or web-based user interface.
+Small libraries, classrooms, and educational projects often need a simple way to keep track of books and manage lending. Using paper records or spreadsheets can lead to mistakes, duplicated information, and difficulty maintaining accurate records.
 
-## Target users
+This project provides a lightweight, command-line-based Java application for managing library books. It allows users to add and view books, issue books to borrowers, and record returned books. The system is designed to keep the library’s information organized while remaining easy to understand, run, and extend.
 
-- Small library staff looking for a minimal electronic tool.
-- Teachers or lab instructors managing classroom libraries.
-- Students learning Java who want a simple, practical project.
-- Developers who need a starting point to extend into a more complete system.
+## Project Scope
 
-## High-level features
+The application focuses on the essential operations required for basic library management. It is implemented as a simple, single-file Java program that runs in the terminal.
 
-- Add Book: Enter an ID, title, and author to add a new book (marked Available).
-- Display Books: List all books with ID, title, author, and current status (Available / Issued).
-- Issue Book: Mark a book as issued by entering its ID; prevent issuing if already lent out.
-- Return Book: Mark a previously issued book as returned using its ID.
-- Starter Data: The program starts with a small set of sample books to try features immediately.
-- Clear CLI Flow: Simple menu-driven interface with prompts and confirmation messages for usability.
+The features included in the current version are:
 
-## Java implementation
+- Managing books in memory without requiring a database.
+- Adding new books to the library.
+- Displaying the list of available and issued books.
+- Issuing books to borrowers.
+- Returning previously issued books.
+- Providing an interactive menu for easy navigation.
+- Including a few sample books when the program starts.
 
-The implementation is in `sourcecode.java` and uses only standard Java libraries. The class is intentionally package-free so it can be compiled and run from the repository root.
+The following features are not included in the current version but could be added in the future:
 
-Compile and run:
+- Saving data permanently to a file or database.
+- Supporting multiple users at the same time.
+- Managing reservations, fines, borrower details, or detailed reports.
+- Providing a graphical or web-based user interface.
+
+## Target Users
+
+This project is designed for:
+
+- Small libraries that need a basic book management system.
+- Teachers and instructors managing classroom or lab libraries.
+- Students learning Java through a practical project.
+- Developers who want a simple foundation for building a more advanced library system.
+
+## Main Features
+
+### Add a Book
+
+Users can add a book by entering its ID, title, and author. Every newly added book is marked as available.
+
+### Display Books
+
+The system displays all books along with their ID, title, author, and current status. A book can have one of two statuses: `Available` or `Issued`.
+
+### Issue a Book
+
+Users can issue a book by entering its ID. The system prevents a book from being issued if it has already been lent out.
+
+### Return a Book
+
+Users can return an issued book by entering its ID. Once returned, the book’s status is changed back to `Available`.
+
+### Sample Books
+
+The program starts with a small collection of sample books, allowing users to test the system immediately without entering all the data manually.
+
+### Simple Command-Line Interface
+
+A menu-driven interface guides users through each operation. Clear prompts and confirmation messages make the program easy to use.
+
+## Java Implementation
+
+The application is implemented in `sourcecode.java` using only standard Java libraries. The program does not use a package, so it can be compiled and executed directly from the repository root.
+
+To compile and run the program, use the following commands:
 
 ```bash
 javac sourcecode.java
