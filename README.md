@@ -45,22 +45,22 @@ Install the Java Development Kit (JDK) version 8 or later.
 
 Verify the installation using:
 
-```bash
+
 java -version
 javac -version
-```
+
 
 ### 2. Clone the Repository
 
-```bash
+
 git clone https://github.com/akashpr4deep/LIBRARY-MANAGEMENT-SYSTEM.git
-```
+
 
 Move into the project directory:
 
-```bash
+
 cd LIBRARY-MANAGEMENT-SYSTEM
-```
+
 
 ### 3. Check the Java File Name
 
@@ -68,21 +68,20 @@ The source file is currently named `sourcecode.java`.
 
 Because the Java class is named `LibraryManagementSystem`, rename the file to:
 
-```text
+
 LibraryManagementSystem.java
-```
 
 On Linux or macOS:
 
-```bash
+
 mv sourcecode.java LibraryManagementSystem.java
-```
+
 
 On Windows, rename the file manually using File Explorer or run:
 
-```powershell
+
 Rename-Item sourcecode.java LibraryManagementSystem.java
-```
+
 
 ## How to Run
 
@@ -90,21 +89,21 @@ Rename-Item sourcecode.java LibraryManagementSystem.java
 
 Open a terminal in the project directory and run:
 
-```bash
+
 javac LibraryManagementSystem.java
-```
+
 
 This creates the compiled Java class files.
 
 ### Run the Program
 
-```bash
+
 java LibraryManagementSystem
-```
+
 
 The following menu will appear:
 
-```text
+
 *** Library Management System ***
 1. Add Book
 2. Display Books
@@ -112,25 +111,24 @@ The following menu will appear:
 4. Return Book
 5. Exit
 Enter your choice (1-5):
-```
 
 Select an option by entering a number from `1` to `5`.
 
 ### Example: Add a Book
 
-```text
+
 Enter your choice (1-5): 1
 Enter Book ID: 11
 Enter Book Title: New Book
 Enter Book Author: Some Author
-```
+
 
 ### Example: Display Books
 
-```text
+
 ID: 1    Title: The Wimpikid    Author: Harper Lee    Status: Available
 ID: 3    Title: Pride and Prejudice    Author: Jane Austen    Status: Issued
-```
+
 
 ### Menu Options
 
