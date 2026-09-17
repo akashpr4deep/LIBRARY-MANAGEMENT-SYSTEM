@@ -1,7 +1,5 @@
 # LIBRARY-MANAGEMENT-SYSTEM
 
-# Library Management System
-
 ## Overview
 
 This is a simple command-line Library Management System developed using Java. It simulates the basic operations of a library, allowing users or librarians to add books, view the library inventory, issue books, and return books.
