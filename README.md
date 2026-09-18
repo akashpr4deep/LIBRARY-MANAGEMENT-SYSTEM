@@ -4,7 +4,7 @@
 
 This is a simple command-line Library Management System developed using Java. It simulates the basic operations of a library, allowing users or librarians to add books, view the library inventory, issue books, and return books.
 
-The application stores book data in memory using Java collections, making it suitable for learning, practice, and demonstration purposes.
+The application stores book data in memory using Java collections, making it suitable for learning,practice, anddemonstration purposes.
 
 ## Features
 
@@ -41,7 +41,7 @@ No external libraries or dependencies are required.
 
 ### 1. Install Java
 
-Install the Java Development Kit (JDK) version 8 or later.
+Install theJava Development Kit (JDK) version 8 or later.
 
 Verify the installation using:
 
@@ -64,7 +64,7 @@ cd LIBRARY-MANAGEMENT-SYSTEM
 
 ### 3. Check the Java File Name
 
-The source file is currently named `sourcecode.java`.
+The source fileis currently named `sourcecode.java`.
 
 Because the Java class is named `LibraryManagementSystem`, rename the file to:
 
