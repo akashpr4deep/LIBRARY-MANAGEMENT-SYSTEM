@@ -5,7 +5,7 @@
 
 Small libraries, classrooms, and educational projects often need a simple way to keep track of books and manage lending. Using paper records or spreadsheets can lead to mistakes, duplicated information, and difficulty maintaining accurate records.
 
-This project provides a lightweight, command-line-based Java application for managing library books. It allows users to add and view books, issue books to borrowers, and record returned books. The system is designed to keep the library’s information organized while remaining easy to understand, run, and extend.
+This project provides a lightweight,command-line-based Java application for managing library books. It allows users to add and view books, issue books to borrowers, and record returned books. The system is designed to keep the library’s information organized whileremaining easy to understand, run, and extend.
 
 ## Project Scope
 
@@ -21,7 +21,7 @@ The features included in the current version are:
 - Providing an interactive menu for easy navigation.
 - Including a few sample books when the program starts.
 
-The following features are not included in the current version but could be added in the future:
+The following features are not includedin the current version but could be added in the future:
 
 - Saving data permanently to a file or database.
 - Supporting multiple users at the same time.
